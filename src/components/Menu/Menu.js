@@ -1,32 +1,30 @@
-import React from "react";
 import PropTypes from "prop-types";
-require("core-js/fn/array/from");
-
-import { FaHome } from "react-icons/fa/";
-import { FaSearch } from "react-icons/fa/";
-import { FaEnvelope } from "react-icons/fa/";
-import { FaTag } from "react-icons/fa/";
-
-import Item from "./Item";
+import React from "react";
+import {
+  FaHome,
+  FaSearch,
+  FaTag,
+  FaCog,
+  FaInfo,
+  FaFileContract,
+  FaTools,
+  FaFile
+} from "react-icons/fa/";
 import Expand from "./Expand";
+import Item from "./Item";
+require("core-js/fn/array/from");
 
 class Menu extends React.Component {
   constructor(props) {
     super(props);
     this.itemList = React.createRef();
 
-    const pages = props.pages.map(page => ({
-      to: page.node.fields.slug,
-      label: page.node.frontmatter.menuTitle
-        ? page.node.frontmatter.menuTitle
-        : page.node.frontmatter.title
-    }));
-
     this.items = [
       { to: "/", label: "Home", icon: FaHome },
       { to: "/category/", label: "Categories", icon: FaTag },
       { to: "/search/", label: "Search", icon: FaSearch },
-      ...pages
+      { to: "/uses/", label: "Uses", icon: FaTools },
+      { to: "/conduct/", label: "Conduct", icon: FaFileContract }
       // { to: "/contact/", label: "Contact", icon: FaEnvelope }
     ];
 
@@ -149,6 +147,13 @@ class Menu extends React.Component {
             {this.items.map(item => (
               <Item item={item} key={item.label} icon={item.icon} theme={theme} />
             ))}
+            <Item
+              item={{ label: "CV", icon: FaFile }}
+              key="CV"
+              icon={FaFile}
+              theme={theme}
+              onClick={() => window.open("https://storage.googleapis.com/ah-blogs/CV.pdf")}
+            />
           </ul>
           {this.state.hiddenItems.length > 0 && <Expand onClick={this.toggleMenu} theme={theme} />}
           {open && screenWidth >= 1024 && (
