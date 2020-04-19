@@ -21,7 +21,50 @@ icon: Fa
 ### Software
 
 - VS Code
+  - Bracket Pair Colorizer 2
+  - Color Highlight
+  - css-to-react
+  - Night Owl
+  - Placeholder Images
+  - Apollo GraphQL
+  - Prettier
+  - Docker
+  - Debugger for Chrome
+  - Jest
+  - vscode-styled-components
+  - Terraform
+  - Azure Pipelines
+  - C#
+  - .NET Core Test Explorer
+  - .NET Core User Secrets
+  - AWS Toolkit
 - iTerm 2
+  - ZSH
+  - Oh My ZSH
+    ```sh
+    plugins=(git git-open zsh-syntax-highlighting react-native zsh-autosuggestions encode64)
+    ```
+  - Powerlevel9k
+    ```sh
+      POWERLEVEL9K_MODE="awesome-patched"
+      ZSH_THEME="powerlevel10k/powerlevel10k"
+      ## POWERLEVEL9K SETTINGS ##
+      POWERLEVEL9K_STATUS_VERBOSE=false
+      POWERLEVEL9K_STATUS_OK_IN_NON_VERBOSE=true
+      POWERLEVEL9K_PROMPT_ON_NEWLINE=false
+      POWERLEVEL9K_MULTILINE_FIRST_PROMPT_PREFIX=''
+      POWERLEVEL9K_MULTILINE_LAST_PROMPT_PREFIX="%K{white}%F{black} \UE12E `date +%T` %f%k%F{white}%f "
+      POWERLEVEL9K_SHORTEN_DIR_LENGTH=2
+      POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir vcs)
+      POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status battery)
+      POWERLEVEL9K_OS_ICON_BACKGROUND="white"
+      POWERLEVEL9K_OS_ICON_FOREGROUND="blue"
+      POWERLEVEL9K_DIR_HOME_FOREGROUND="white"
+      POWERLEVEL9K_DIR_HOME_SUBFOLDER_FOREGROUND="white"
+      POWERLEVEL9K_DIR_DEFAULT_FOREGROUND="white"
+      POWERLEVEL9K_PROMPT_ADD_NEWLINE=true
+    ```
+  - nvm
 - Spectacle
 - Sizzy
 - Figma
@@ -43,8 +86,8 @@ icon: Fa
 
 ### ITPI
 
-- .net Core
 - React
 - React Native
+- .NET Core
 - MS SQL
 - AWS
