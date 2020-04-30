@@ -15,7 +15,7 @@ I'll be sharing my development experiences, challenges, tips and tricks, and fai
 
 I currently work full time for the IT Partnering and Innovation team at Lancaster University, meaning my workload is incredibly dynamic and varied.
 
-Alongside this I am currently working on a start-up, [Lexio](lexio.dev), which aims to democratise app development and make it more accessible to developers everywhere.
+Alongside this I am currently working on a start-up, [Lexio](https://lexioplatform.co.uk), which aims to democratise app development and make it more accessible to developers everywhere.
 
 My experience is therefore quite broad, I am a full-stack developer, certified scrum master, and start-up co-founder. This blog will focus on the more general experiences, looking at both personal and professional development along the way.
 
