@@ -19,7 +19,7 @@ Alongside this I am currently working on a start-up, [Lexio](lexio.dev), which a
 
 My experience is therefore quite broad, I am a full-stack developer, certified scrum master, and start-up co-founder. This blog will focus on the more general experiences, looking at both personal and professional development along the way.
 
-I will at times reference my other blog, [fullstack.dev](https://fullstack.dev) which focuses on the more technical side of things. I chose carefully to separate these blogs so that this one doesn't descend into purely engineering discussions, which I think is a temptation for most developers.
+I will at times reference my other blog, [fullstackapp.dev](https://fullstackapp.dev) which focuses on the more technical side of things. I chose carefully to separate these blogs so that this one doesn't descend into purely engineering discussions, which I think is a temptation for most developers.
 
 If there is any particular content you'd like to see, reach out to me on [Twitter](https://twitter.com/aphumphreys) or drop me an [email](mailto:anthony@lexio.app?subject=AnthonyHumphreys.dev%20Content%20Suggestion).
 
