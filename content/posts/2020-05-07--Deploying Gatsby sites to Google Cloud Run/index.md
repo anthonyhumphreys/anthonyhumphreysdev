@@ -119,4 +119,10 @@ The final step is to deploy a new revision of the service to Cloud Run
       --allow-unauthenticated
 ```
 
+## Adding a post
+
+Simply add a new post under `content/posts` following the naming convention, commit your changes and push - when your changes hit the master branch, the Action will run and update your site. Magic, right?
+
+![Magic GIF](https://media.giphy.com/media/12NUbkX6p4xOO4/giphy.gif)
+
 Hopefully you can now browse to the url for the service and see your brand new site! If I have skimmed over any steps or if anything isn't clear, hit me up on [Twitter](https://twitter.com/aphumphreys) and I'll clear things up!
