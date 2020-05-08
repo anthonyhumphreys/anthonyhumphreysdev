@@ -7,17 +7,25 @@ author: Anthony Humphreys
 
 # Building the Gatsby site
 
-You don't need to do anything different to build a Gatsby site for deployment to Cloud Run.
+You don't need to do anything _particularly_ special to build a Gatsby site for deployment to Cloud Run, but there are some steps between building the project and seeing it live.
 
-I used the [gatsby-starter-hero-blog](https://github.com/greglobinski/gatsby-starter-hero-blog) starter.
+For this tutorial (and for my blogs) I'll use [gatsby-starter-hero-blog](https://github.com/greglobinski/gatsby-starter-hero-blog) starter.
 
-Getting up and running is simple: `gatsby new anthonyhumphreysdev https://github.com/greglobinski/gatsby-starter-blog`, then you can run your site locally with `gatsby develop`.
+Getting up and running is simple (make sure you have the [gatsby cli](https://www.gatsbyjs.org/docs/gatsby-cli/) installed correctly first)
 
-After customising the template to my liking, setting up content and an initial post, it was time to deploy a test build.
+`gatsby new anthonyhumphreysdev https://github.com/greglobinski/gatsby-starter-blog`,
 
-I decided to use [GitHub Actions](https://github.com/features/actions) and [Cloud Run](https://cloud.google.com/run) to do this. I use Cloud Run for Lexio and love its ease of use and general developer experience. Please check out the repo for the starter to understand the environment variables you need to set. You can [set secrets in the GitHub repo](https://help.github.com/en/actions/configuring-and-managing-workflows/creating-and-storing-encrypted-secrets)
+then you can run your site locally with
 
-You can checkout the action YAML [here](https://github.com/anthonyhumphreys/anthonyhumphreysdev/blob/master/.github/workflows/main.yml):
+`gatsby develop`.
+
+After customising the template to your liking (have a poke around, check out the gatsby & starter docs for more guidance!), setting up some content and an initial post, it's time to deploy a test build.
+
+I decided to use [GitHub Actions](https://github.com/features/actions) and [Cloud Run](https://cloud.google.com/run) to do this. GitHub actions is the new kid on the block for CI/CD, but it's such a nice experience, especially being so closely coupled to your actual source repo. I use Cloud Run for Lexio and love its ease of use and general developer experience.
+
+You'll need to set up some environment variables for the gatsby starter and for the GitHub action workflow. These should be clear from the starter's docs, and from the source below. You can [set secrets in the GitHub repo](https://help.github.com/en/actions/configuring-and-managing-workflows/creating-and-storing-encrypted-secrets)
+
+You can checkout the full action YAML [here](https://github.com/anthonyhumphreys/anthonyhumphreysdev/blob/master/.github/workflows/main.yml):
 
 I simply use the Node action to install dependencies and build the site.
 
@@ -34,11 +42,11 @@ I simply use the Node action to install dependencies and build the site.
   run: yarn build
 ```
 
-That's all there really is to it as far as building the site goes - no different to building on your own machine.
+That's all there really is to it as far as building the site goes - no different to building on your own machine...but we still need a few bits and pieces yet.
 
 # Cloud Run
 
-Before continuing, we need to provision a new service in Cloud Run. Make a note of the Service Account Email Address, Project ID, Service Name, as you will need these later.
+Before continuing, you'll need to provision a new service in Cloud Run (assuming you have a Google Cloud account and Project set up!). Make a note of the Service Account Email Address, Project ID, Service Name, as you will need these later.
 
 # Building and Deploying the Docker Image
 
