@@ -1,5 +1,5 @@
 ---
-title: AnthonyHumphreys.dev
+title: Deploying a Gatsby Site to Google Cloud Run
 category: "Gatsby"
 cover: cloud.jpg
 author: Anthony Humphreys

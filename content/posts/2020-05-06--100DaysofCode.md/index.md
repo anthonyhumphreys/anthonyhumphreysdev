@@ -1,5 +1,5 @@
 ---
-title: AnthonyHumphreys.dev
+title: 100 Days of Code
 category: "100 Days of Code"
 cover: spacex.jpg
 author: Anthony Humphreys
