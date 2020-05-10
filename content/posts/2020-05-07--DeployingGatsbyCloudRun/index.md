@@ -1,6 +1,6 @@
 ---
 title: Deploying a Gatsby Site to Google Cloud Run
-category: "Gatsby"
+category: "100 Days of Code"
 cover: cloud.jpg
 author: Anthony Humphreys
 ---
