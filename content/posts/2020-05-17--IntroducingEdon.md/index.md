@@ -11,7 +11,7 @@ Edon is the name I'm giving to a little corner of the internet, over on [GitHub]
 
 # Why does this exist?
 
-Mainting a separate repo and all that merging sounds like a nightmare, right? Well, I'll archive the repository once Deno has a solid Code of Conduct and the core contributors are seen to be taking their role in supporting a community.
+Mainting a separate repo and all that merging sounds like a nightmare, right? Well, I'll archive the repository once Deno has a solid Code of Conduct and the core contributors are seen to be taking their role in supporting a community more seriously.
 
 The Deno team has, so far, seemed reluctant to take the issue of not having a Code of Conduct seriously.
 
