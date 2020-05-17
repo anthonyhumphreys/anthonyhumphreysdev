@@ -147,13 +147,13 @@ class Menu extends React.Component {
             {this.items.map(item => (
               <Item item={item} key={item.label} icon={item.icon} theme={theme} />
             ))}
-            <Item
+            {/* <Item
               item={{ label: "CV", icon: FaFile }}
               key="CV"
               icon={FaFile}
               theme={theme}
               onClick={() => window.open("https://storage.googleapis.com/ah-blogs/CV.pdf")}
-            />
+            /> */}
           </ul>
           {this.state.hiddenItems.length > 0 && <Expand onClick={this.toggleMenu} theme={theme} />}
           {open && screenWidth >= 1024 && (
