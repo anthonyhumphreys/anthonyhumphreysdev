@@ -1,7 +1,7 @@
 ---
 title: React Native Animation
-category: "Announcements"
-cover: welcome.jpg
+category: "React Native Animation"
+cover: hummingbird.jpg
 author: Anthony Humphreys
 ---
 
