@@ -15,7 +15,7 @@ For the simplest example, I created a simple card component using `<Animated.Vie
 
 ### Creating a card
 
-```javascript
+```JSX
 <Animated.View
   style={[
     styles.card,
@@ -81,7 +81,7 @@ const fadeOut = useCallback(() => {
 
 This `fadeOut` function is called from a `<Button>` which I added to the card.
 
-```javascript
+```JSX
 <Button color="#FFFFFF" title="Fade Out" onPress={fadeOut} />
 ```
 
@@ -103,7 +103,7 @@ const [expanded, setExpanded] = useState(false);
 
 the `heightAnim` variable is used to drive the height of the card, while the `expanded` state variable is used to show and hide some additional text, which only shows when the card is in the `expanded` state. This is not necessarily the best way to construct this UI, this is purely for demonstration purposes. In this instance, the `fadeAnim` variable is used to drive the opacity of the text, not the whole card.
 
-```javascript
+```JSX
 <Animated.View
   style={[
     styles.card,
