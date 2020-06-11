@@ -136,6 +136,12 @@ module.exports = {
                 width: "25px"
               }
             }
+          },
+          {
+            resolve: `gatsby-plugin-web-monetization`,
+            options: {
+              paymentPointer: `$ilp.uphold.com/Kh6MRD9JDEr3`
+            }
           }
         ]
       }
