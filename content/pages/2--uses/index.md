@@ -14,9 +14,8 @@ icon: Fa
 
 ### Accessories
 
-- Magic Keyboard 2
-- Magic Mouse 2
-- MX Master 2
+- [HS60](https://mechboards.co.uk/shop/parts/hs60-hotswap-pcb/) Custom-Built keyboard
+- MX Master 3
 
 ### Software
 
@@ -78,6 +77,7 @@ icon: Fa
 - Gatsby
 - React
 - React Native
+- Amplify
 - Google Cloud Run
 - Apollo
 - Mongo Atlas
